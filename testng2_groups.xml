@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FirstTestSuite">
+	<test name="TestRegression">
+		<groups>
+			<run>
+				<include name="TEST_TICKET "></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testcases.TestScenarios3" />
+			<class name="testcases.TestScenarios4" />
+		</classes>
+	</test>
+</suite>
