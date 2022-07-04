@@ -6,12 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
-import framework.LinkedinLoginDetails;
+import common.SeleniumUtils;
 
-public class LinkedInSearchPstCmpny extends LinkedinLoginDetails {
+public class T5LinkedInSearchPstCmpny extends SeleniumUtils {
 
-	@Test
-	public void LinkedInSearchCurCmpny1() throws InterruptedException {
+	@Test(description = "TC15 - To verify the search functionality by selecting multiple companies from the filter Past company")
+	public void LinkedInSearchCurCmpnyTC15() throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
@@ -57,8 +57,8 @@ public class LinkedInSearchPstCmpny extends LinkedinLoginDetails {
 
 	}
 
-	@Test
-	public void LinkedInSearchCurCmpny2() throws InterruptedException {
+	@Test(description = "TC16 - To verify the search functionality by filter Reset Past company")
+	public void LinkedInSearchCurCmpnyTC16() throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 

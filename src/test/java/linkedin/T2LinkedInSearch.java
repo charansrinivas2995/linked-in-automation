@@ -4,12 +4,12 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import framework.LinkedinLoginDetails;
+import common.SeleniumUtils;
 
-public class LinkedInSearch extends LinkedinLoginDetails {
+public class T2LinkedInSearch extends SeleniumUtils {
 
-	@Test
-	public void LinkedInSearch1() throws InterruptedException {
+	@Test(description = "TC09 - To verify the search functionality using filter multiple Connections")
+	public void LinkedInSearchTC09() throws InterruptedException {
 
 		driver.manage().window().maximize();
 
@@ -50,8 +50,8 @@ public class LinkedInSearch extends LinkedinLoginDetails {
 
 	}
 
-	@Test
-	public void LinkedInSearch2() throws InterruptedException {
+	@Test(description = "TC10 - To verify the search functionality using filter Reset Connections")
+	public void LinkedInSearchTC10() throws InterruptedException {
 
 		driver.manage().window().maximize();
 
