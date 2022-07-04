@@ -13,14 +13,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class LinkedInSignIn {
+public class T1LinkedInSignIn {
 
 	public static final String User_DIR = "user.dir";
 
 	public static final String URL = "https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin";
 
-	@Test(description="TC01 - LinkedIn login with valid credentials")// (LinkedIn login with valid credentials)
-	public void TC01linkedInSignInTest() throws IOException, InterruptedException {
+	@Test(description = "TC01 - LinkedIn login with valid credentials") // (LinkedIn login with valid credentials)
+	public void linkedInSignInTestTC01() throws IOException, InterruptedException {
 
 		String projectPath = System.getProperty(User_DIR);
 
@@ -79,8 +79,8 @@ public class LinkedInSignIn {
 
 	}
 
-	@Test // (To verify LinkedIn login with invalid Username)
-	public void linkedInSignInTest2() throws IOException {
+	@Test(description = "TC02-To verify LinkedIn login with invalid Username")
+	public void linkedInSignInTestTC02() throws IOException {
 
 		String projectPath = System.getProperty(User_DIR);
 
@@ -139,8 +139,8 @@ public class LinkedInSignIn {
 
 	}
 
-	@Test // (To verify LinkedIn login with invalid Password)
-	public void linkedInSignInTest3() throws IOException {
+	@Test(description = "TC03-To verify LinkedIn login with invalid Password")
+	public void linkedInSignInTestTC03() throws IOException {
 
 		String projectPath = System.getProperty(User_DIR);
 
@@ -199,8 +199,8 @@ public class LinkedInSignIn {
 
 	}
 
-	@Test // (To verify LinkedIn login without Username)
-	public void linkedInSignInTest4() throws IOException {
+	@Test(description = "TC04 - To verify LinkedIn login without Username")
+	public void linkedInSignInTestTC04() throws IOException {
 
 		String projectPath = System.getProperty(User_DIR);
 
@@ -259,8 +259,8 @@ public class LinkedInSignIn {
 
 	}
 
-	@Test // (To verify LinkedIn login without password)
-	public void linkedInSignInTest5() throws IOException {
+	@Test(description = "TC05-To verify LinkedIn login without password")
+	public void linkedInSignInTestTC05() throws IOException {
 
 		String projectPath = System.getProperty(User_DIR);
 
@@ -318,8 +318,8 @@ public class LinkedInSignIn {
 		driver.quit();
 	}
 
-	@Test // (To verify LinkedIn login with phone number)
-	public void linkedInSignInTest6() throws IOException {
+	@Test(description = "TC06-To verify LinkedIn login with phone number")
+	public void linkedInSignInTestTC06() throws IOException {
 
 		String projectPath = System.getProperty(User_DIR);
 
@@ -377,9 +377,9 @@ public class LinkedInSignIn {
 		driver.quit();
 	}
 
-	@Test // (To verify LinkedIn login with invalid Username as mobile number with less
-			// than lower boundary)
-	public void linkedInSignInTest7() throws IOException {
+	@Test(description = "TC07-To verify LinkedIn login with invalid Username as mobile number with lessthan lower boundary")
+
+	public void linkedInSignInTestTC07() throws IOException {
 
 		String projectPath = System.getProperty(User_DIR);
 
@@ -437,9 +437,8 @@ public class LinkedInSignIn {
 		driver.quit();
 	}
 
-	@Test // (To verify LinkedIn login with invalid Username as mobile number with higher
-			// than higher boundary)
-	public void linkedInSignInTest8() throws IOException {
+	@Test(description = "TC08- To verify LinkedIn login with invalid Username as mobile number with higherthan higher boundary")
+	public void linkedInSignInTestTC08() throws IOException {
 
 		String projectPath = System.getProperty(User_DIR);
 

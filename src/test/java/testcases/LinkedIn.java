@@ -1,4 +1,4 @@
-package linkedin;
+package testcases;
 
 import java.io.FileReader;
 import java.io.IOException;
